@@ -42,7 +42,7 @@ a:hover{
 
 /* DEFAULT RULESET */
 * {
-    color: rgb(210, 210, 210);
+    color: rgb(10, 10, 10);
     font-family: LightSanFrancisco, Arial;
     margin: 0;
 }
