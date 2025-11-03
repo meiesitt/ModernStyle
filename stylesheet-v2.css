@@ -94,7 +94,7 @@ hr {
 
 #down-arrow {
     border: 3px solid white;
-    border-radius: 100%;
+    border-radius: 50%;
     padding: 10px 15px;
     transition: 0.25s ease-in-out;
 }
