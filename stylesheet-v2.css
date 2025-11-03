@@ -95,7 +95,7 @@ hr {
 #down-arrow {
     border: 3px solid white;
     border-radius: 50%;
-    padding: 10px; /* avoid oval-like circle around symbol */
+    padding: 15px; /* avoid oval-like circle around symbol */
     transition: 0.25s ease-in-out;
 }
 
