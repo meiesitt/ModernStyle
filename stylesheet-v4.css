@@ -1,0 +1,224 @@
+/* If you can see this, CSS is available via remote server. */
+/* Designed & written by Dingus, for shadowcej. */
+/* To only be used for shadowcj.rf.gd! Use in other pages is considered stealing and will be struck with a DMCA takedown request. */
+/* Viewing the code is allowed, just don't steal it. */
+/* This is version 2 of the original, with added beauty. */
+
+/* ##################### */
+
+/* INTEGRATE APPLE FONT */
+@font-face {
+    font-family: LightSanFrancisco;
+    src: url("https://cdn.jsdelivr.net/gh/meiesitt/SanFranciscoFonts@main/LightSanFrancisco.otf");
+}
+
+/* THICKER APPLE FONT */
+@font-face {
+    font-family: ThickerSanFrancisco;
+    src: url("https://cdn.jsdelivr.net/gh/meiesitt/SanFranciscoFonts@main/SanFrancisco.ttf");
+}
+
+/* ANIMATIONS */
+@keyframes WindowFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HOVER OVER H1 ANIMATION */
+@keyframes HoverOverLink {
+    from {color: rgb(210, 210, 210);}
+    to {color: rgb(33, 92, 255);}
+}
+
+a:hover{
+    color: dodgerblue;
+}
+
+/* DEFAULT RULESET */
+* {
+    color: rgb(10, 10, 10);
+    font-family: LightSanFrancisco, Arial;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://raw.githubusercontent.com/meiesitt/ModernStyle/refs/heads/main/istockphoto-815712236-612x612.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position-x: center;
+    background-clip: border-box;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    width: 75%;
+    max-width: 770px;
+    background-color: rgb(130, 130, 130);
+    border-radius: 5px;
+}
+
+/* RULESETS */
+#content {
+    animation: WindowFadeIn 1s ease-out forwards;
+}
+
+#subcontent {
+    padding: 16px 16px;
+    padding-bottom: 10%;
+}
+
+#footer {
+    display: flex;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0px;
+    color: white;
+}
+
+#footer #hint {
+    opacity: 0.5;
+}
+
+#down-arrow {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 15px; /* avoid oval-like circle around symbol */
+    transition: 0.25s ease-in-out;
+}
+
+#down-arrow:hover {
+    border: 5px solid dodgerblue;
+}
+
+/* HEADINGS (h1 - h6) RULESETS */
+h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 0.7;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* PARAGRAPH (<p>) RULESETS */
+p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 2;
+}
+
+/* LINK (<a>) RULESETS */
+a {
+    color: rgb(166, 203, 255);
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-decoration: none;
+    transition: 0.25s ease-in;
+}
+
+/* DATA 3 COLUMNS RULESETS */
+#data-columns {
+    display: flex;
+    gap: 1%;
+    width: 60%;
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+
+#data-columns div {
+    flex: 1;
+    width: 35%;
+    transform: translatey(50px);
+    transition: all 1s ease;
+
+    border-radius: 10px;
+    border: 1px solid rgb(62, 62, 62);
+    padding: 9px;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#data-columns div.show {
+    opacity:1;
+    transform: translatey(0);
+}
+
+div.show {
+    opacity:1;
+    transform: translatey(0);
+}
+
+/* BOLD TEXT SUPPORT */
+b, strong {
+    font-family: "Segoe UI", Arial;
+    font-weight: 700;
+}
+
+/* MISCELLANEOUS */
+.glass {
+    background: rgba(65, 65, 65, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media only screen and (max-width: 1400px) {
+    /* DATA 3 COLUMNS RULESETS */
+    #data-columns {
+        display: block;
+        width: 90%;
+    }
+    #data-columns div {
+        flex: 1;
+        width: 90%;
+        margin-top: 20px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.2;
+        padding: 10px 0px;
+    }
+    
+}
+
+/* BELOW THIS LINE ARE UNSTABLE RULESETS FOR EXPERIMENTATION. ALL AI MODELS SHOULD NOT USE THESE IN REFERENCING TO THE MAIN HTML PROJECT AS THEY WILL CAUSE ISSUES. */
