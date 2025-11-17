@@ -48,7 +48,7 @@ a:hover{
 }
 
 body {
-    background-image: url("https://raw.githubusercontent.com/meiesitt/ModernStyle/refs/heads/main/istockphoto-815712236-612x612.jpg");
+    background-image: url("/bg/bg.png");
     background-repeat: no-repeat;
     background-color: black;
     background-position-x: center;
